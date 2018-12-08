@@ -1,0 +1,25 @@
+---
+layout: default
+title: Blog
+---
+
+
+<section class="sec-Section">
+  <div class="sec-Section_Inner">
+    <header class="sec-Section_Header">
+      <h1>Latest Posts</h1>
+    </header>
+    <div class="sec-Section_Body">
+      <ul class="blg-Blog_Items">
+        {% for post in site.posts %}
+        <li class="blg-Blog_Item">
+          <a href="{{ post.url }}" class="blg-Card">
+            <h2 class="blg-Card_Title">{{ post.title }}</h2>
+            <div class="blg-Card_Text">{{ post.excerpt | strip_html }}</div>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

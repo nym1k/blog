@@ -1,0 +1,21 @@
+.hd-Nav_Items {
+  display: flex;
+}
+
+.hd-Nav_Item {
+  list-style: none;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.hd-Nav_Link {
+  color: white;
+  text-decoration: none;
+}
+
+.hd-Nav_Link-active {
+  color: green;
+}
