@@ -1,9 +1,0 @@
-<nav class="hd-Nav">
-  <ul class="hd-Nav_Items">
-    {% for item in site.data.navigation %}
-      <li class="hd-Nav_Item">
-        <a href="{{ item.link }}" class="hd-Nav_Link{% if page.url == item.link %} hd-Nav_Link-active{% endif %}">{{ item.name }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-</nav>
